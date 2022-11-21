@@ -6,9 +6,9 @@ console = Console()
 def dbconfig():
   try:
     db = mysql.connector.connect(
-      host ="localhost",
-      user ="pm",
-      passwd ="password"
+      host ="pmmariadb.mariadb.database.azure.com",
+      user ="pmadmin@pmmariadb",
+      passwd ="xA7@HBbEpQ4XE@R5"
     )
     # printc("[green][+][/green] Connected to db")
   except Exception as e:
@@ -16,3 +16,5 @@ def dbconfig():
     console.print_exception(show_locals=True)
 
   return db
+
+
